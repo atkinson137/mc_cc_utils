@@ -44,7 +44,7 @@ for number, item in pairs(list) do
     end
 end
 
-freeSpace = totalSize – totalUsed
+freeSpace = totalSize - totalUsed
 freePerc = round((totalUsed / totalSize) * 100)
 
 mon1.setCursorPos(1,1)
@@ -60,4 +60,4 @@ mon1.write(totalUsed)
 mon1.setCursorPos(1,3)
 mon1.write(“Space Remaining: “)
 mon1.setCursorPos(20,3)
-mon1.write(freeSpace)
+mon1.write(freePerc.."%")
